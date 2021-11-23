@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drop Down Menu</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -14,15 +15,8 @@
     <h2 class="title">Watch Collection</h2>
 
     <nav class="links">
-      <div class="dropdown">
-        <button class="dropdown-btn">Watches</button>
-        <!-- <ul class="dropdown-menu">
-          <li class="dropdown-menu-item">Watch 122</li>
-          <li class="dropdown-menu-item">Watch 222</li>
-          <li class="dropdown-menu-item">Watch 322</li>
-          <li class="dropdown-menu-item">Watch 422</li>
-          <li class="dropdown-menu-item">Watch 522</li>
-        </ul> -->
+      <div class="dropdown" data-dropdown>
+        <button class="dropdown-btn" data-dropdown-btn>Watches</button>
         <div class="dropdown-menu info-grid">
           <div>
             <h3>Rolex</h3>
@@ -51,12 +45,13 @@
           </div>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropdown-btn">Coming Soon</button>
+      <div class="dropdown" data-dropdown>
+        <button class="dropdown-btn" data-dropdown-btn>Coming Soon</button>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
-          <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
-          <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
+          <a href="#" class="dropdown-menu-item">Blancpain</a>
+          <a href="#" class="dropdown-menu-item">A.Lange & Söhne.</a>
+          <a href="#" class="dropdown-menu-item">Patek Philippe.</a>
+          <a href="#" class="dropdown-menu-item">IWC Schaffhausen.</a>
         </div>
       </div>
       <a href="#" class="link">About Us</a>
