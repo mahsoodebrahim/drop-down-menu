@@ -1,0 +1,78 @@
+body,
+ul,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(149, 177, 198);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  font-size: inherit;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.dropdown-btn:focus {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.25rem);
+  background: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-15px);
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.dropdown-menu-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: inherit;
+  color: blue;
+  cursor: pointer;
+  margin: 0.25rem 0;
+}
+
+.dropdown-btn:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1.5em;
+  padding: 1em;
+}

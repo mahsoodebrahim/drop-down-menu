@@ -6,28 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drop Down Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
     <h2 class="title">Watch Collection</h2>
-    <nav>
-      <div class="link">
-        <button>Watches</button>
-        <ul>
-          <li>Watch 1</li>
-          <li>Watch 2</li>
-          <li>Watch 3</li>
-        </ul>
+
+    <nav class="links">
+      <div class="dropdown">
+        <button class="dropdown-btn">Watches</button>
+        <!-- <ul class="dropdown-menu">
+          <li class="dropdown-menu-item">Watch 122</li>
+          <li class="dropdown-menu-item">Watch 222</li>
+          <li class="dropdown-menu-item">Watch 322</li>
+          <li class="dropdown-menu-item">Watch 422</li>
+          <li class="dropdown-menu-item">Watch 522</li>
+        </ul> -->
+        <div class="dropdown-menu info-grid">
+          <div>
+            <h3>Rolex</h3>
+            <a href="#" class="dropdown-menu-item">Rolex Oyster Perpetual</a>
+            <a href="#" class="dropdown-menu-item">Rolex Datejust</a>
+            <a href="#" class="dropdown-menu-item">Rolex Exploer I</a>
+            <a href="#" class="dropdown-menu-item">Rolex Exploer II</a>
+          </div>
+          <div>
+            <h3>Omega</h3>
+            <a href="#" class="dropdown-menu-item">Omega Seamaster</a>
+            <a href="#" class="dropdown-menu-item">Omega Constellation</a>
+            <a href="#" class="dropdown-menu-item">Omega Speedmaster</a>
+          </div>
+          <div>
+            <h3>Hublot</h3>
+            <a href="#" class="dropdown-menu-item">Hublot Novelties</a>
+            <a href="#" class="dropdown-menu-item">Hublot Big Bang</a>
+            <a href="#" class="dropdown-menu-item">Hublot Classic Fusion</a>
+          </div>
+          <div>
+            <h3>Breitling</h3>
+            <a href="#" class="dropdown-menu-item">Breitling Navitimer</a>
+            <a href="#" class="dropdown-menu-item">Breitling Superocean Heritage</a>
+            <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
+          </div>
+        </div>
       </div>
-      <div class="link">
-        <button>Coming Soon</button>
-        <ul>
-          <li>Watch 1</li>
-          <li>Watch 2</li>
-          <li>Watch 3</li>
-        </ul>
+      <div class="dropdown">
+        <button class="dropdown-btn">Coming Soon</button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
+          <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
+          <a href="#" class="dropdown-menu-item">Breitling Avenger</a>
+        </div>
       </div>
+      <a href="#" class="link">About Us</a>
     </nav>
   </header>
 </body>
