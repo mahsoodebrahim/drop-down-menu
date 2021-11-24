@@ -51,7 +51,7 @@ header {
   opacity: 0;
   transform: translateY(-15px);
   pointer-events: none;
-  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .dropdown-menu-item {
